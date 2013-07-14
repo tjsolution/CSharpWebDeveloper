@@ -37,5 +37,6 @@ Given all their systems are running in .Net they have decided it makes sense to 
 
 ### In closing.
 
-No tricks, no monkey business. A plain and transparent exercise that we believe you should enjoy completing.
+No tricks, no monkey business. A plain and transparent exercise that we believe you should enjoy completing. Note this is not a real problem
+nor is it real software. We are not looking at solving a real problem just trying assess how you construct solutions.
 
