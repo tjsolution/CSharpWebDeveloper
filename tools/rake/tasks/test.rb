@@ -12,7 +12,7 @@ namespace :test do
 
   def get_test_dlls
     test_dlls = []
-    (Dir.glob("/**/*Test*.dll")).each do |dll|
+    (Dir.glob("#{SOURCE_ROOT}/**.*/bin/debug/*Test.dll")).each do |dll|
       test_dlls.push("#{dll}")
     end
     test_dlls
