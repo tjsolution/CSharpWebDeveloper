@@ -21,12 +21,13 @@ Given all their systems are running in .Net they have decided it makes sense to 
 * The solution must be buidable and testable using [Rake](http://rake.rubyforge.org/) as this is the customers preferred CI task toolset.
 * Be totally portable, if we cannot suck it down and build it from the command line dont bother.
 
-### What will your future team mates be looking for.
+### What will your future team mates be looking for in your response.
 * Something innovative yet simple.
-* Attempts to improve quality
-* Tidy code
+* Refactoring for the better.
+* Attempts to improve quality of the existing code base.
+* Tidy code.
 * A sound understanding of efficient developer workflow or TDD.
-* 
+* Improved documentation, be it commented code or valuable test suite.
 
 ### What next?
 * Please fork or clone the repo and make any changes.
