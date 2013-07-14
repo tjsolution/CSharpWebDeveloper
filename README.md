@@ -5,6 +5,13 @@ A simple contextual project to help the team access your brilliance. The solutio
 ## The scenario
 
 We recently acquired a new customer in the Acme Zoo. They had a very interesting request. They asked us to build an animal library that they could plug into an existing system.
+The library is required for the creation of animals in the larger system.
+Example
+```
+var dog = Zoo.AnimalMaker.Make("Dog");
+```
+
+Given all their systems are running in .Net they have decided it makes sense to create a simple library they can reuse throughout their stack.
 
 ### The libray should.
 
@@ -13,6 +20,13 @@ We recently acquired a new customer in the Acme Zoo. They had a very interesting
 * Be testable in isolation.
 * The solution must be buidable and testable using [Rake](http://rake.rubyforge.org/) as this is the customers preferred CI task toolset.
 * Be totally portable, if we cannot suck it down and build it from the command line dont bother.
+
+### What will your future team mates be looking for.
+* Something innovative yet simple.
+* Attempts to improve quality
+* Tidy code
+* A sound understanding of efficient developer workflow or TDD.
+* 
 
 ### What next?
 * Please fork or clone the repo and make any changes.
