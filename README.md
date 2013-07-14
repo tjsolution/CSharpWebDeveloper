@@ -12,3 +12,8 @@ We recently acquired a new customer in the Acme Zoo. They had a very interesting
 * Comply to reasonable software development practices.
 * Be testable in isolation.
 
+
+### In closing.
+
+No tricks, no momnkey business. A plain and transparent exercise that we believe you should enjoy completing.
+
