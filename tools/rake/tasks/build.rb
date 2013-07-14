@@ -4,13 +4,18 @@ require 'fileutils'
 namespace :build do
 
   desc "Builds the solution using the supplied config or Debug buildtools by default"
-  msbuild :build, [:config]  do |msb,args|
+  msbuild :build, [:config] => :ensure_solution_packages  do |msb,args|
     args.with_defaults(:config => "Debug")
     msb.properties = { :configuration => args[:config]}
     msb.targets = [:Build ]
     msb.verbosity = :minimal
     msb.parameters = "/maxcpucount"
     msb.solution = "#{SOURCE_ROOT}/#{SOLUTION_NAME}.sln"
+  end
+
+  exec :ensure_solution_packages do |cmd|
+    cmd.command = "#{NUGET_ROOT}/nuget.exe"
+    cmd.parameters = "install #{NUGET_ROOT}/packages.config -o #{SOURCE_ROOT}/packages"
   end
 
   desc "Cleans the solution"
