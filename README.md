@@ -13,7 +13,7 @@ var dog = Zoo.AnimalMaker.Make("Dog");
 
 Given all their systems are running in .Net they have decided it makes sense to create a simple library they can reuse throughout their stack.
 
-### The libray should.
+### The library should.
 
 * Create animals.
 * Comply to reasonable software development practices.
