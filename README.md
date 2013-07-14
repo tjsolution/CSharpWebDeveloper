@@ -11,9 +11,15 @@ We recently acquired a new customer in the Acme Zoo. They had a very interesting
 * Create animals.
 * Comply to reasonable software development practices.
 * Be testable in isolation.
+* The solution must be buidable and testable using rake as this is the customers preferred CI task toolset.
 
+### What next?
+* Please fork or clone the repo and make any changes.
+* Once you are done please reply to the email that sent you here with a link to your repo on GitHub.
+* Do not email the solution back, create a repo and we will clone it.
+* Have fun!!
 
 ### In closing.
 
-No tricks, no momnkey business. A plain and transparent exercise that we believe you should enjoy completing.
+No tricks, no monkey business. A plain and transparent exercise that we believe you should enjoy completing.
 
