@@ -11,7 +11,7 @@ We recently acquired a new customer in the Acme Zoo. They had a very interesting
 * Create animals.
 * Comply to reasonable software development practices.
 * Be testable in isolation.
-* The solution must be buidable and testable using rake as this is the customers preferred CI task toolset.
+* The solution must be buidable and testable using [Rake](http://rake.rubyforge.org/) as this is the customers preferred CI task toolset.
 
 ### What next?
 * Please fork or clone the repo and make any changes.
