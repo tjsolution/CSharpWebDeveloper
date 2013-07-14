@@ -22,6 +22,7 @@ Given all their systems are running in .Net they have decided it makes sense to 
 * Be totally portable, if we cannot suck it down and build it from the command line dont bother.
 
 ### What will your future team mates be looking for in your response.
+* Fix any bugs you find.
 * Simple yet innovative improvements.
 * Refactoring for the better.
 * Attempts to improve quality of the existing code base.
@@ -32,6 +33,7 @@ Given all their systems are running in .Net they have decided it makes sense to 
 ### What next?
 * Please fork or clone the repo and make any changes.
 * Once you are done please reply to the email that sent you here with a link to your repo on GitHub.
+* Feel free to capture any comments or notes in the readme.md.
 * Do not email the solution back, create a repo and we will clone it.
 * Have fun!!
 
