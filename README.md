@@ -4,7 +4,7 @@ A simple contextual project to help the team access your brilliance. The solutio
 
 ## The scenario
 
-We recently acquired a new customer in the Acme Zoo. They had a very interesting request they. They asked us to build an animal library that they could plug into an existing system.
+We recently acquired a new customer in the Acme Zoo. They had a very interesting request. They asked us to build an animal library that they could plug into an existing system.
 
 ### The libray should.
 
