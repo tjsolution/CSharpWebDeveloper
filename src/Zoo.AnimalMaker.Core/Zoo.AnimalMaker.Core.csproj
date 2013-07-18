@@ -37,6 +37,7 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AnimalMakerException.cs" />
     <Compile Include="Animals\Cat.cs" />
     <Compile Include="Animals\Dog.cs" />
     <Compile Include="IAnimal.cs" />
