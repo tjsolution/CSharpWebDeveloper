@@ -12,12 +12,18 @@ namespace Zoo.AnimalMaker.Core
     /// </summary>
     public class Maker
     {
-        private static readonly Dictionary<string, Type> AnimalList = 
+
+        /// <summary>
+        /// Hash of animal types.
+        /// Key: type name of type as a string.
+        /// Value: Type of animal.
+        /// </summary>
+        private static readonly Dictionary<string, Type> AnimalTypeMap = 
             new Dictionary<string, Type>();
 
         static Maker()
         {
-            AutoRegisterAnimals();
+            AutoRegisterDefaultAnimals();
         }
 
         /// <summary>
@@ -34,7 +40,7 @@ namespace Zoo.AnimalMaker.Core
             }
 
             Type animalType = null;
-            if (AnimalList.TryGetValue(typeName, out animalType))
+            if (AnimalTypeMap.TryGetValue(typeName, out animalType))
             {
                 return (IAnimal)Activator.CreateInstance(animalType);
             }
@@ -60,14 +66,14 @@ namespace Zoo.AnimalMaker.Core
                 throw AnimalMakerException.Create("{0} is not a concrete type.", type.Name);
             }
 
-            AnimalList.Add(type.Name, type);
+            AnimalTypeMap.Add(type.Name, type);
         }
 
         /// <summary>
         /// Automatically registers the animals in the library.
         /// Reflection is slow so Animals can be registered manually in the constructor if necessary.
         /// </summary>
-        private static void AutoRegisterAnimals()
+        private static void AutoRegisterDefaultAnimals()
         {
             var assembly = Assembly.GetExecutingAssembly();
             var animalTypes = assembly.GetTypes()
