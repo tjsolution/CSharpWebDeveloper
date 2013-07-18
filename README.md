@@ -57,5 +57,5 @@ nor is it real software. We are not looking at solving a real problem just tryin
 3.	Added code comments for interfaces and publicly available classes and functions.
 4.	Removed the IMaker interface as the assumption was that client wants to access the functionality through a static method call. I would otherwise I would have implemented the interface, which would allow the client to replace or mock the factory in their own solution.
 5.	Cleaned up the animal classes to avoid using hardcoded strings to generate type names.
-6.	Removed setters for IAnimal interfaces until there is a reason for allowing the animal object properties to be set externally.
+6.	Removed setters for the IAnimal interface until there is a reason for allowing the animal object properties to be set externally.
 7.	Created an AnimalMaker exception class to let clients handle library specific exceptions.
