@@ -40,7 +40,6 @@
     <Compile Include="Animals\Cat.cs" />
     <Compile Include="Animals\Dog.cs" />
     <Compile Include="IAnimal.cs" />
-    <Compile Include="IMaker.cs" />
     <Compile Include="Maker.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
