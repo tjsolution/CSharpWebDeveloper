@@ -1,16 +1,13 @@
 ﻿namespace Zoo.AnimalMaker.Core.Animals
 {
+    /// <summary>
+    /// A furry animal that likes to sleep.
+    /// </summary>
     public class Cat : IAnimal
     {
+        public string TypeName { get { return GetType().Name; } }
+        public int NumberOfLegs { get { return 4; } }
 
-        public Cat()
-        {
-            TypeName = "Cat";
-            DailyFeedCost = 10;
-        }
-
-        public string TypeName { get; set; }
-        public int NumberOfLegs { get; set; }
-        public decimal DailyFeedCost { get; set; }
+        public decimal DailyFeedCost { get { return 10; } }
     }
 }
