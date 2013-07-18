@@ -43,15 +43,15 @@ No tricks, no monkey business. A plain and transparent exercise that we believe 
 nor is it real software. We are not looking at solving a real problem just trying assess how you construct solutions.
 
 
-# Improvements
+## Improvements
 
-## Assumptions
+### Assumptions
 1.  The client requires the Animal Maker to generate animal objects based on a type name string. The assumption is based on the description of the task in the readme file.
 2.	The client requires the Animal Maker method to be accessible using a static function call. This assumption is based on the description of the task in the readme file.
-3.	The system is not performance sensitive which permits the use of reflection for automatically registering animal types.
+3.	The system is not performance sensitive, which permits the use of reflection for automatically registering animal types.
 4.	There has been no request to assign an individual id to each animal to differentiate animals of the same type from one another.
 
-## Changes
+### Changes
 1.  Refactored the animal maker to more closely follow the SOLID principles by allowing clients to easily extend the number of animal types the factory can handle.
 2.	Added unit tests to test error handling and type extension.
 3.	Added code comments for interfaces and publicly available classes and functions.
